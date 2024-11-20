@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+/*colors*/
+--Dark_Blue: hsl(217, 28%, 15%);  /* (intro and email sign up background)*/
+--main_background: hsl(218, 28%, 13%);
+--footer_background: hsl(216, 53%, 9%);
+--testimonials_background: hsl(219, 30%, 18%);
+
+--White: hsl(0, 0%, 100%);
+
+--cyan: hsl(176, 68%, 64%);
+--blue: hsl(198, 60%, 50%);
+--light-red: hsl(0, 100%, 63%);
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700; /* Bold headings */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400; /* Default weight for body */
+    line-height: 1.6; /* Optional: Adjust line spacing for readability */
+    font-size: 14px;
+    background-color: var(--main_background);
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+/*===================the header section======================*/
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+header .container .links{
+    display: flex;
+    gap: 40px;
+    color: cyan;
+
+}
+header .container .links a{
+    color: rgb(173, 170, 170);
+    transition: 0.4s;
+}
+header .container .links a:hover{
+    color: var(--White);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/*===================the introduction section======================*/
+
+.intro .container{
+    text-align: center;
+    width: 30%;
+    margin-block: 50px 100px;
+}
+.text_container h1{
+    color: var(--White);
+    font-size: 2rem;
+    margin-block: 20px;
+}
+.text_container p{
+    color: rgb(173, 170, 170);
+    font-size: 1.15rem;
+    margin-bottom: 40px;
+}
+.text_container .btn{
+    padding: 15px 80px;
+    background-color: var(--blue);
+    border-radius: 50px;
+    color: var(--White);
+    transition: 0.3s;
+}
+.text_container .btn:hover{
+    background-color: var(--cyan);
+}
